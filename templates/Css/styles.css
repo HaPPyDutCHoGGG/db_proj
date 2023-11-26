@@ -1,0 +1,144 @@
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+.data-container {
+    border: 3px dashed #bdbdbd;
+    display: inline-block;
+    padding: 15px;
+}
+
+.data-field {
+    font-size: 20px;
+    margin: 2px 0;
+}
+
+.container {
+    display: inline-block;
+    margin: 0 20px;
+    vertical-align: top;
+}
+
+.text-field {
+  margin-bottom: 1rem;
+}
+/* стили для label */
+.text-field__label {
+  margin-bottom: 0.25rem;
+  font-size: 25px;
+}
+.text-field__btn {
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: #eee;
+  border: 1px solid #bdbdbd;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  transition: background-color .15s ease-in-out;
+}
+.text-field__btn:hover {
+  background-color: #bdbdbd;
+}
+/* стили для input */
+.text-field__input {
+  width: 200px;
+  height: 25px;
+  margin: 10px 0 10px 0;
+  padding: 0.375rem 0.75rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.logo {
+   width: 60%;
+   margin:  0 10% 0 10%; 
+}
+
+/* The navigation menu links */
+.sidenav button {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav button:hover {
+    color: #f1f1f1;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #777;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+}
+
+/* Style page content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    margin-top: 50px;
+    padding: 0px 10px;
+}
+
+.main-container {
+    margin-left: 50px;
+    margin-top: 50px;
+    padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
